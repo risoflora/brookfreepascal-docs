@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookRouter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<h1 class="unit">Unit BrookRouter</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Router classes.</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookRouter.EBrookRoutes.html"><code>EBrookRoutes</code></a></td>
+<td class="itemdesc">Handles exceptions for <a class="normal" href="BrookRouter.TBrookRoutes.html">TBrookRoutes</a>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookRouter.EBrookRouter.html"><code>EBrookRouter</code></a></td>
+<td class="itemdesc">Handles exceptions for <a class="normal" href="BrookRouter.TBrookRouter.html">TBrookRouter</a>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="BrookRouter.TBrookRoute.html"><code>TBrookRoute</code></a></td>
+<td class="itemdesc">Defines a route item.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookRouter.TBrookRoutes.html"><code>TBrookRoutes</code></a></td>
+<td class="itemdesc">Defines a list of routes.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookRouter.TBrookRouter.html"><code>TBrookRouter</code></a></td>
+<td class="itemdesc">Provides features for the route handling.</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#TBrookRoutesClass">TBrookRoutesClass</a></b> = class of <a  href="BrookRouter.TBrookRoutes.html">TBrookRoutes</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#TBrookRouterClass">TBrookRouterClass</a></b> = class of <a  href="BrookRouter.TBrookRouter.html">TBrookRouter</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#PBrookRoute">PBrookRoute</a></b> = &circ;<a  href="BrookRouter.TBrookRoute.html">TBrookRoute</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#TBrookMatchPatternEvent">TBrookMatchPatternEvent</a></b> = function(ASender: TObject; APattern, APathInfo: string; out ARedirect: Boolean; out ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>; var AHandled: Boolean): Boolean of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#PBrookMatchPatternEvent">PBrookMatchPatternEvent</a></b> = &circ;<a  href="BrookRouter.html#TBrookMatchPatternEvent">TBrookMatchPatternEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#TBrookRouteEvent">TBrookRouteEvent</a></b> = procedure(ASender: TObject; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#PBrookRouteEvent">PBrookRouteEvent</a></b> = &circ;<a  href="BrookRouter.html#TBrookRouteEvent">TBrookRouteEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#TBrookExecuteActionEvent">TBrookExecuteActionEvent</a></b> = procedure(ASender: TObject; AAction: <a  href="BrookAction.TBrookAction.html">TBrookAction</a>; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; const ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>; ARoute: <a  href="BrookRouter.TBrookRoute.html">TBrookRoute</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookRouter.html#PBrookExecuteActionEvent">PBrookExecuteActionEvent</a></b> = &circ;<a  href="BrookRouter.html#TBrookExecuteActionEvent">TBrookExecuteActionEvent</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookRoutesClass"></span><code><b>TBrookRoutesClass</b> = class of <a  href="BrookRouter.TBrookRoutes.html">TBrookRoutes</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a metaclass for <a class="normal" href="BrookRouter.TBrookRoutes.html">TBrookRoutes</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookRouterClass"></span><code><b>TBrookRouterClass</b> = class of <a  href="BrookRouter.TBrookRouter.html">TBrookRouter</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a metaclass for <a class="normal" href="BrookRouter.TBrookRouter.html">TBrookRouter</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBrookRoute"></span><code><b>PBrookRoute</b> = &circ;<a  href="BrookRouter.TBrookRoute.html">TBrookRoute</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a pointer to the route item.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookMatchPatternEvent"></span><code><b>TBrookMatchPatternEvent</b> = function(ASender: TObject; APattern, APathInfo: string; out ARedirect: Boolean; out ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>; var AHandled: Boolean): Boolean of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a type to <code>*MatchPattern</code> event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBrookMatchPatternEvent"></span><code><b>PBrookMatchPatternEvent</b> = &circ;<a  href="BrookRouter.html#TBrookMatchPatternEvent">TBrookMatchPatternEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a pointer to the match pattern event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookRouteEvent"></span><code><b>TBrookRouteEvent</b> = procedure(ASender: TObject; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a type to <code>*Route</code> event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBrookRouteEvent"></span><code><b>PBrookRouteEvent</b> = &circ;<a  href="BrookRouter.html#TBrookRouteEvent">TBrookRouteEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a pointer to the route event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookExecuteActionEvent"></span><code><b>TBrookExecuteActionEvent</b> = procedure(ASender: TObject; AAction: <a  href="BrookAction.TBrookAction.html">TBrookAction</a>; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; const ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>; ARoute: <a  href="BrookRouter.TBrookRoute.html">TBrookRoute</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a type to <code>*ExecuteAction</code> event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBrookExecuteActionEvent"></span><code><b>PBrookExecuteActionEvent</b> = &circ;<a  href="BrookRouter.html#TBrookExecuteActionEvent">TBrookExecuteActionEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a pointer to the execute action event.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

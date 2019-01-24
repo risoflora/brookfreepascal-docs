@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookAction: Class TBrookAction</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<span id="TBrookAction"></span><h1 class="cio">Class TBrookAction</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookAction.html">BrookAction</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookAction = class(<a class="normal" href="BrookClasses.TBrookPersistent.html">TBrookPersistent</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Provides features to handle HTTP requests and responses.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TPersistent</li>
+<li class="ancestor"><a class="normal" href="BrookClasses.TBrookPersistent.html">TBrookPersistent</a></li>
+<li class="thisitem">TBrookAction</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookAction.TBrookAction.html#Create">Create</a></b>; overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookAction.TBrookAction.html#Create">Create</a></b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a  href="BrookAction.TBrookAction.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="BrookAction.TBrookAction.html#Register">Register</a></b>(const APattern: string; const ADefault: Boolean = False); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="BrookAction.TBrookAction.html#Register">Register</a></b>(const APattern: string; const AMethod: <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a>; const ADefault: Boolean = False); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookAction.TBrookAction.html#GetPath">GetPath</a></b>: string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#DoFillVariables">DoFillVariables</a></b>(const ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#DoFillingVariables">DoFillingVariables</a></b>(const AIndex: Integer; const ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#SetCookie">SetCookie</a></b>(const AName, AValue: string; const AExpires: TDateTime = <a  href="BrookConsts.html#NullDate">NullDate</a>; const APath: string = <a  href="BrookConsts.html#ES">ES</a>; const ADomain: string = <a  href="BrookConsts.html#ES">ES</a>; const ASecure: Boolean = False; const AHttpOnly: Boolean = False);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookAction.TBrookAction.html#GetCookie">GetCookie</a></b>(const AName: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#DeleteCookie">DeleteCookie</a></b>(const AName: string; const APath: string = <a  href="BrookConsts.html#ES">ES</a>; const ADomain: string = <a  href="BrookConsts.html#ES">ES</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#DoRequest">DoRequest</a></b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Request">Request</a></b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#GetFields">GetFields</a></b>(AObject: TObject);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#GetParams">GetParams</a></b>(AObject: TObject);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#GetVariables">GetVariables</a></b>(AObject: TObject);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookAction.TBrookAction.html#UrlFor">UrlFor</a></b>(AActionClass: <a  href="BrookAction.html#TBrookActionClass">TBrookActionClass</a>): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookAction.TBrookAction.html#UrlFor">UrlFor</a></b>(AActionClass: <a  href="BrookAction.html#TBrookActionClass">TBrookActionClass</a>; const AParams: array of string): string; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookAction.TBrookAction.html#UrlFor">UrlFor</a></b>(AClassName: string; const AParams: array of string): string; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookAction.TBrookAction.html#UrlFor">UrlFor</a></b>(AClassName: string): string; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Get">Get</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Post">Post</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Put">Put</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Patch">Patch</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Delete">Delete</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Head">Head</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Options">Options</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Redirect">Redirect</a></b>(const AUrl: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Redirect">Redirect</a></b>(const AUrl: string; const AStatusCode: Word); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Redirect">Redirect</a></b>(const AUrl: string; const AUseRootUrl: Boolean); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Redirect">Redirect</a></b>(const AUrl: string; const AUseRootUrl: Boolean; const AStatusCode: Word); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Error">Error</a></b>(const AMsg: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Error">Error</a></b>(const AMsg: string; const AArgs: array of const); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Stop">Stop</a></b>(const AMsg: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Stop">Stop</a></b>(const AMsg: string; const AArgs: array of const); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Render">Render</a></b>(const AFileName: TFileName); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Render">Render</a></b>(const AFileName: TFileName; const AArgs: array of const); overload; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookAction.TBrookAction.html#Exists">Exists</a></b>(const AName: string): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(const AString: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(const ABoolean: Boolean); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(const AInteger: Integer); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(const AFloat: Double); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(AObject: TObject); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(AObject: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(AObject: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(AStream: TStream); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookAction.TBrookAction.html#Write">Write</a></b>(const AFmt: string; const AArgs: array of const); overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#Field">Field</a></b>[constAName:string]: string read GetField <a  href="BrookAction.TBrookAction.html#Write">write</a> SetField;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#Param">Param</a></b>[constAName:string]: string read GetParam <a  href="BrookAction.TBrookAction.html#Write">write</a> SetParam;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#Variable">Variable</a></b>[constAName:string]: string read GetVariable
+      <a  href="BrookAction.TBrookAction.html#Write">write</a> SetVariable;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#Files">Files</a></b>: <a  href="BrookHttpDefs.html#TBrookUploadedFiles">TBrookUploadedFiles</a> read FFiles;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#Fields">Fields</a></b>: TStrings read FFields;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#Params">Params</a></b>: TStrings read FParams;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#Variables">Variables</a></b>: TStrings read FVariables;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#Method">Method</a></b>: string read GetMethod;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#HttpRequest">HttpRequest</a></b>: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a> read FHttpRequest;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookAction.TBrookAction.html#HttpResponse">HttpResponse</a></b>: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a> read FHttpResponse;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>; overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of a <a class="normal" href="BrookAction.TBrookAction.html">TBrookAction</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of a <a class="normal" href="BrookAction.TBrookAction.html">TBrookAction</a> class passing params to request/response.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Destroy"></span><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Frees an instance of <a class="normal" href="BrookAction.TBrookAction.html">TBrookAction</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Register"></span><code>class procedure <b>Register</b>(const APattern: string; const ADefault: Boolean = False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Registers an action.
+
+<p>
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>APattern</dt>
+<dd>Is an expression defining which URLs is used to call an action. It is possible to use variables inside URLs:
+
+<p></p>
+
+<dl class="paragraph_spacing">
+  <dt><b>:name</b> &ndash; Represents a variable that spans single URL component between slashes.</dt>
+  <dd><p>Examples:
+
+<p><code>TMyAction.Register('/foo/:myvar');</code>
+
+<p>Value of a variable <code>&quot;myvar&quot;</code> can be read from the property <a class="normal" href="BrookAction.TBrookAction.html#Variables">Variables</a> or <a class="normal" href="BrookAction.TBrookAction.html#Variable">Variable</a>, e.g.:
+
+<p><code>Write(Variables.Values['myvar']);</code>
+
+<p><code>Write(Variable['myvar']);</code>
+
+<p>Any number of variables can be combined:
+
+<p><code>TMyAction.Register('/foo/:cat/:id');</code> </p></dd>
+  <dt><b>*name</b> &ndash; Represents a variable that spans one or more levels between slashes in the current URL.</dt>
+  <dd><p>Examples:
+
+<p><code>TMyAction.Register('/home/*path');</code>
+
+<p>Any of the following URLs will match:
+
+<p><a  href="http://localhost/cgi-bin/cgi1/home/file">http://localhost/cgi-bin/cgi1/home/file</a> <br> <a  href="http://localhost/cgi-bin/cgi1/home/dir/file">http://localhost/cgi-bin/cgi1/home/dir/file</a> <br> <a  href="http://localhost/cgi-bin/cgi1/home/dir/subdir/file">http://localhost/cgi-bin/cgi1/home/dir/subdir/file</a> etc.
+
+<p>Variable <code>Variables.Values['path']</code> will receive <code>'file'</code>, <code>'dir/file'</code> or <code>'dir/subdir/file'</code> correspondingly.
+
+<p>You can also add static text after variable part:
+
+<p><code>TMyAction.Register('/home/*path/download');</code>
+
+<p><a  href="http://localhost/cgi-bin/cgi1/home/dir/file/download">http://localhost/cgi-bin/cgi1/home/dir/file/download</a> &ndash; This will match, <br> <a  href="http://localhost/cgi-bin/cgi1/home/dir/file/info">http://localhost/cgi-bin/cgi1/home/dir/file/info</a> &ndash; but not this, because ending is different.
+
+<p>Multi-level variable can be combined with any number of single-level variables in any order:
+
+<p><code>TMyAction.Register('/home/user/:uid/file/*fpath/version/:vid/info');</code>
+
+<p><b><i>NOTE:</i></b> Only one multi-level variable can be specified per URL. </p></dd>
+  <dt><b>url/</b> &ndash; Adds a slash to the end of the URL if does not exist.</dt>
+  <dd><p>Example:
+
+<p><code>TMyAction.Register('/foo/');</code>
+
+<p>An action can be accessed as <a  href="http://localhost/cgi-bin/cgi1/foo">http://localhost/cgi-bin/cgi1/foo</a> or <a  href="http://localhost/cgi-bin/cgi1/foo/">http://localhost/cgi-bin/cgi1/foo/</a>. When called as <a  href="http://localhost/cgi-bin/cgi1/foo">http://localhost/cgi-bin/cgi1/foo</a>, it will be automatically redirected to <a  href="http://localhost/cgi-bin/cgi1/foo/">http://localhost/cgi-bin/cgi1/foo/</a>. If the pathinfo is different from <code>/foo</code> a 404 page is returned; </p></dd>
+</dl>
+
+<p> <b><i>NOTE:</i></b> Two actions can't be registered with the same pattern except when they are called by means of different HTTP methods.</dd>
+<dt>ADefault</dt>
+<dd>A action registered as <i>Default</i> will be called automatically if the URL does not match with <i>Pattern</i> of any registered actions. It is not allowed to register more than one action as default. A typical example of use is:
+
+<p><code>TMyAction.Register('*', True);</code></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Register"></span><code>class procedure <b>Register</b>(const APattern: string; const AMethod: <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a>; const ADefault: Boolean = False); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Registers an action specifying the HTTP request method.
+
+<p></p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>AMethod</dt>
+<dd>Informs the HTTP request method being valid the following options: <code>rmAll, rmGet, rmHead, rmOptions, rmPost, rmPut</code> or <code>rmDelete</code>. The only way to register two actions with the same pattern is differentiating the value of this parameter. If at least one action has this parameter changed, the route mapping is enabled in <a class="normal" href="BrookUtils.TBrookSettings.html#Mapped">Mapped</a>. A typical example of use is:
+
+<p></p>
+
+<pre class="longcode">@(longcode
+<span class="pascal_keyword">procedure</span> TMyAction1.Get;
+<span class="pascal_keyword">begin</span>
+  <span class="pascal_keyword">Write</span>(<span class="pascal_string">'GET'</span>);
+<span class="pascal_keyword">end</span>;
+
+<span class="pascal_keyword">procedure</span> TMyAction1.Put;
+<span class="pascal_keyword">begin</span>
+  <span class="pascal_keyword">Write</span>(<span class="pascal_string">'PUT'</span>);
+<span class="pascal_keyword">end</span>;
+
+<span class="pascal_keyword">procedure</span> TMyAction2.Post;
+<span class="pascal_keyword">begin</span>
+  <span class="pascal_keyword">Write</span>(<span class="pascal_string">'POST'</span>);
+<span class="pascal_keyword">end</span>;
+
+<span class="pascal_keyword">initialization</span>
+  TMyAction1.<span class="pascal_keyword">Register</span>(<span class="pascal_string">'/foo1'</span>, rmGet);
+  TMyAction1.<span class="pascal_keyword">Register</span>(<span class="pascal_string">'/foo1'</span>, rmPut);
+  TMyAction2.<span class="pascal_keyword">Register</span>(<span class="pascal_string">'/foo1'</span>, rmPost);)</pre>
+
+<p></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetPath"></span><code>class function <b>GetPath</b>: string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the path of action. Exemple:
+
+<p><code>/cgi-bin/cgi1/myaction</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoFillVariables"></span><code>procedure <b>DoFillVariables</b>(const ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Fills the <a class="normal" href="BrookAction.TBrookAction.html#Variables">Variables</a> with the registered variables passed through the URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoFillingVariables"></span><code>procedure <b>DoFillingVariables</b>(const AIndex: Integer; const ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Fills the <a class="normal" href="BrookAction.TBrookAction.html#Variables">Variables</a> with the registered variables passed one by one through the URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="SetCookie"></span><code>procedure <b>SetCookie</b>(const AName, AValue: string; const AExpires: TDateTime = <a  href="BrookConsts.html#NullDate">NullDate</a>; const APath: string = <a  href="BrookConsts.html#ES">ES</a>; const ADomain: string = <a  href="BrookConsts.html#ES">ES</a>; const ASecure: Boolean = False; const AHttpOnly: Boolean = False);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates a cookie.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetCookie"></span><code>function <b>GetCookie</b>(const AName: string): string;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a cookie value.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DeleteCookie"></span><code>procedure <b>DeleteCookie</b>(const AName: string; const APath: string = <a  href="BrookConsts.html#ES">ES</a>; const ADomain: string = <a  href="BrookConsts.html#ES">ES</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Deletes a cookie.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoRequest"></span><code>procedure <b>DoRequest</b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Calls the method <a class="normal" href="BrookAction.TBrookAction.html#Request">Request</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Request"></span><code>procedure <b>Request</b>(ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered by a request of any HTTP method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetFields"></span><code>procedure <b>GetFields</b>(AObject: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get an object with the fields coming from a <code>x-www-form-urlencoded</code> form.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetParams"></span><code>procedure <b>GetParams</b>(AObject: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get an object with the params coming from a <code>QUERY_STRING</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetVariables"></span><code>procedure <b>GetVariables</b>(AObject: TObject);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get an object with the variables coming from an URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UrlFor"></span><code>function <b>UrlFor</b>(AActionClass: <a  href="BrookAction.html#TBrookActionClass">TBrookActionClass</a>): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an URL for action.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UrlFor"></span><code>function <b>UrlFor</b>(AActionClass: <a  href="BrookAction.html#TBrookActionClass">TBrookActionClass</a>; const AParams: array of string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an URL for an action informing an array of parameters. Exemple:
+
+<p></p>
+
+<pre class="longcode">@(longcode
+      <span class="pascal_keyword">procedure</span> TMyAction.Get;
+      <span class="pascal_keyword">begin</span>
+        <span class="pascal_comment">// When calling with http://localhost/cgi-bin/cgi1/foo/myvalue</span>
+        <span class="pascal_comment">// the output will be /cgi-bin/cgi1/foo/myvalue</span>
+        <span class="pascal_keyword">Write</span>(UrlFor(TMyAction, [<span class="pascal_string">'myvalue'</span>]));
+      <span class="pascal_keyword">end</span>;
+
+      <span class="pascal_keyword">initialization</span>
+        TMyAction.<span class="pascal_keyword">Register</span>(<span class="pascal_string">'/foo/:myvar'</span>);)</pre>
+
+<p></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UrlFor"></span><code>function <b>UrlFor</b>(AClassName: string; const AParams: array of string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an URL for an action passing an array of parameters however informing the class name as string.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UrlFor"></span><code>function <b>UrlFor</b>(AClassName: string): string; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an URL for an action informing the class name as string.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get"></span><code>procedure <b>Get</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered by a GET HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Post"></span><code>procedure <b>Post</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered by a POST HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Put"></span><code>procedure <b>Put</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered by a PUT HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Patch"></span><code>procedure <b>Patch</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered by a PATCH HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Delete"></span><code>procedure <b>Delete</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered by a DELETE HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Head"></span><code>procedure <b>Head</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered by a HEAD HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Options"></span><code>procedure <b>Options</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered by an OPTIONS HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Redirect"></span><code>procedure <b>Redirect</b>(const AUrl: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Redirects to an URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Redirect"></span><code>procedure <b>Redirect</b>(const AUrl: string; const AStatusCode: Word); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Redirects to an URL informing the (302, 307) status code.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Redirect"></span><code>procedure <b>Redirect</b>(const AUrl: string; const AUseRootUrl: Boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Redirects to an URL informing the root URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Redirect"></span><code>procedure <b>Redirect</b>(const AUrl: string; const AUseRootUrl: Boolean; const AStatusCode: Word); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Redirects to an URL informing the (302, 307) status code and the <code>ScriptName</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Error"></span><code>procedure <b>Error</b>(const AMsg: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Raises a message for action exceptions.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Error"></span><code>procedure <b>Error</b>(const AMsg: string; const AArgs: array of const); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Raises a formated message for action exceptions.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Stop"></span><code>procedure <b>Stop</b>(const AMsg: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Stops the action showing an exception message.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Stop"></span><code>procedure <b>Stop</b>(const AMsg: string; const AArgs: array of const); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Stops the action showing a formatted exception message.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <b>Render</b>(const AFileName: TFileName); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes the content of a file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Render"></span><code>procedure <b>Render</b>(const AFileName: TFileName; const AArgs: array of const); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes the content of a file passing parameters to the output.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Clear"></span><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Clears all written content with <code>Write(), WriteLn(), Render()</code> etc.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Exists"></span><code>function <b>Exists</b>(const AName: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if a name exists in fields.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(const AString: string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a string.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(const ABoolean: Boolean); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a boolean.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(const AInteger: Integer); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes an integer.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(const AFloat: Double); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a float.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(AObject: TObject); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes an object.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(AObject: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes an object allowing to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(AObject: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes an object allowing to ignore properties via a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(AStream: TStream); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a content of stream.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Write"></span><code>procedure <b>Write</b>(const AFmt: string; const AArgs: array of const); overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a formatted string.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Field"></span><code>property <b>Field</b>[constAName:string]: string read GetField <a  href="BrookAction.TBrookAction.html#Write">write</a> SetField;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Handles the fields of a form.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Param"></span><code>property <b>Param</b>[constAName:string]: string read GetParam <a  href="BrookAction.TBrookAction.html#Write">write</a> SetParam;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Handles the Query_String parameters of a URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Variable"></span><code>property <b>Variable</b>[constAName:string]: string read GetVariable
+      <a  href="BrookAction.TBrookAction.html#Write">write</a> SetVariable;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Handles variables from a parametrized URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Files"></span><code>property <b>Files</b>: <a  href="BrookHttpDefs.html#TBrookUploadedFiles">TBrookUploadedFiles</a> read FFiles;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Handles a file list of fields of a form.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Fields"></span><code>property <b>Fields</b>: TStrings read FFields;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Handles a string list of fields of a form.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Params"></span><code>property <b>Params</b>: TStrings read FParams;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Handles a string list of the Query_String parameters of a URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Variables"></span><code>property <b>Variables</b>: TStrings read FVariables;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Handles a string list of variables from a parametrized URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Method"></span><code>property <b>Method</b>: string read GetMethod;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Returns the HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HttpRequest"></span><code>property <b>HttpRequest</b>: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a> read FHttpRequest;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Provides services related to HTTP requests drived to a webserver.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="HttpResponse"></span><code>property <b>HttpResponse</b>: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a> read FHttpResponse;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Provides services related to the HTTP responses comming back from a webserver.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookHttpUtils</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<h1 class="unit">Unit BrookHttpUtils</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+HTTP utilities unit.</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookDateTimeToGMT">BrookDateTimeToGMT</a></b>(const ADateTime: TDateTime): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookSameUrl">BrookSameUrl</a></b>(AUrl1, AUrl2: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookStatusCodeToReasonPhrase">BrookStatusCodeToReasonPhrase</a></b>(const AStatusCode: Word): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookReasonPhraseToStatusCode">BrookReasonPhraseToStatusCode</a></b>(const AReasonPhrase: string): Word;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookGetAcceptEncodingSet">BrookGetAcceptEncodingSet</a></b>( const AAcceptEncoding: ShortString): <a  href="BrookHttpUtils.html#TBrookAcceptEncodingSet">TBrookAcceptEncodingSet</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookGetAcceptEncoding">BrookGetAcceptEncoding</a></b>( const AAcceptEncoding: <a  href="BrookHttpUtils.html#TBrookAcceptEncodingSet">TBrookAcceptEncodingSet</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookMimeTypeFromFileExt">BrookMimeTypeFromFileExt</a></b>(const AValue: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookMimeTypeFromFileName">BrookMimeTypeFromFileName</a></b>(const AValue: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookFileExtFromMimeType">BrookFileExtFromMimeType</a></b>(const AValue: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookExtractUrlFileName">BrookExtractUrlFileName</a></b>(const AUrl: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookExtractUrlFileName">BrookExtractUrlFileName</a></b>(const AUrl: string; const AEscapeQueryString: Boolean): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookRequestMethodToStr">BrookRequestMethodToStr</a></b>(const AMethod: <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookStrToRequestMethod">BrookStrToRequestMethod</a></b>(const AMethod: string): <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookHttpUtils.html#BrookHttpRequest">BrookHttpRequest</a></b>(const AUrl: string; const AMethod: <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a> = <a  href="BrookUtils.html#rmGet">rmGet</a>; const AHttpClientLibrary: string = <a  href="BrookConsts.html#ES">ES</a>): <a  href="BrookHttpClient.TBrookHttpResult.html">TBrookHTTPResult</a>;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookHttpUtils.html#TBrookAcceptEncodingSet">TBrookAcceptEncodingSet</a></b> = set of (aeDeflate, aeGzip, aeSdch, aeXGzip);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookDateTimeToGMT"></span><code>function <b>BrookDateTimeToGMT</b>(const ADateTime: TDateTime): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Converts TDateTime to a GMT format.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSameUrl"></span><code>function <b>BrookSameUrl</b>(AUrl1, AUrl2: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Compare two URLs ignoring a possible final slash.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookStatusCodeToReasonPhrase"></span><code>function <b>BrookStatusCodeToReasonPhrase</b>(const AStatusCode: Word): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the reason phrase corresponding to a status code.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookReasonPhraseToStatusCode"></span><code>function <b>BrookReasonPhraseToStatusCode</b>(const AReasonPhrase: string): Word;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the status code corresponding to a reason phrase.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookGetAcceptEncodingSet"></span><code>function <b>BrookGetAcceptEncodingSet</b>( const AAcceptEncoding: ShortString): <a  href="BrookHttpUtils.html#TBrookAcceptEncodingSet">TBrookAcceptEncodingSet</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns a set of HTTP AceptEnconding header.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookGetAcceptEncoding"></span><code>function <b>BrookGetAcceptEncoding</b>( const AAcceptEncoding: <a  href="BrookHttpUtils.html#TBrookAcceptEncodingSet">TBrookAcceptEncodingSet</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns a string of HTTP AcceptEnconding.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookMimeTypeFromFileExt"></span><code>function <b>BrookMimeTypeFromFileExt</b>(const AValue: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns a MIME type by file extension.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookMimeTypeFromFileName"></span><code>function <b>BrookMimeTypeFromFileName</b>(const AValue: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns a MIME type by file name.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookFileExtFromMimeType"></span><code>function <b>BrookFileExtFromMimeType</b>(const AValue: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns a file extension by MIME type.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookExtractUrlFileName"></span><code>function <b>BrookExtractUrlFileName</b>(const AUrl: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Extracts the file name of an URL.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookExtractUrlFileName"></span><code>function <b>BrookExtractUrlFileName</b>(const AUrl: string; const AEscapeQueryString: Boolean): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Extracts the file name of an URL and escapes it.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookRequestMethodToStr"></span><code>function <b>BrookRequestMethodToStr</b>(const AMethod: <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the string corresponding to a <code>TBrookRequestMethod</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookStrToRequestMethod"></span><code>function <b>BrookStrToRequestMethod</b>(const AMethod: string): <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Returns the <code>TBrookRequestMethod</code> corresponding to a string.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookHttpRequest"></span><code>function <b>BrookHttpRequest</b>(const AUrl: string; const AMethod: <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a> = <a  href="BrookUtils.html#rmGet">rmGet</a>; const AHttpClientLibrary: string = <a  href="BrookConsts.html#ES">ES</a>): <a  href="BrookHttpClient.TBrookHttpResult.html">TBrookHTTPResult</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Perform HTTP requests. (allows all request methods)</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookAcceptEncodingSet"></span><code><b>TBrookAcceptEncodingSet</b> = set of (aeDeflate, aeGzip, aeSdch, aeXGzip);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a set to represent the AcceptEncoding HTTP header.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

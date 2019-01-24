@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookSession</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<h1 class="unit">Unit BrookSession</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Session class.</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookSession.EBrookSession.html"><code>EBrookSession</code></a></td>
+<td class="itemdesc">Handles exceptions for <a class="normal" href="BrookSession.TBrookSession.html">TBrookSession</a>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookSession.TBrookSession.html"><code>TBrookSession</code></a></td>
+<td class="itemdesc">Defines features to the session handling.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookSession.TBrookGSession.html"><code>TBrookGSession</code></a></td>
+<td class="itemdesc">Defines features to the section mapping field values to object.</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookSession.html#TBrookSessionClass">TBrookSessionClass</a></b> = class of <a  href="BrookSession.TBrookSession.html">TBrookSession</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookSession.html#TBrookSessionStartEvent">TBrookSessionStartEvent</a></b> = procedure(ASender: TObject; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookSession.html#PBrookSessionStartEvent">PBrookSessionStartEvent</a></b> = &circ;<a  href="BrookSession.html#TBrookSessionStartEvent">TBrookSessionStartEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookSession.html#TBrookSessionFinishEvent">TBrookSessionFinishEvent</a></b> = procedure(ASender: TObject; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookSession.html#PBrookSessionFinishEvent">PBrookSessionFinishEvent</a></b> = &circ;<a  href="BrookSession.html#TBrookSessionFinishEvent">TBrookSessionFinishEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookSession.html#TBrookSessionExpireEvent">TBrookSessionExpireEvent</a></b> = procedure(ASender: TObject; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookSession.html#PBrookSessionExpireEvent">PBrookSessionExpireEvent</a></b> = &circ;<a  href="BrookSession.html#TBrookSessionExpireEvent">TBrookSessionExpireEvent</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookSessionClass"></span><code><b>TBrookSessionClass</b> = class of <a  href="BrookSession.TBrookSession.html">TBrookSession</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a metaclass for <a class="normal" href="BrookSession.TBrookSession.html">TBrookSession</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookSessionStartEvent"></span><code><b>TBrookSessionStartEvent</b> = procedure(ASender: TObject; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a type to the session start event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBrookSessionStartEvent"></span><code><b>PBrookSessionStartEvent</b> = &circ;<a  href="BrookSession.html#TBrookSessionStartEvent">TBrookSessionStartEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a pointer to the session start event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookSessionFinishEvent"></span><code><b>TBrookSessionFinishEvent</b> = procedure(ASender: TObject; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a type to the session finish event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBrookSessionFinishEvent"></span><code><b>PBrookSessionFinishEvent</b> = &circ;<a  href="BrookSession.html#TBrookSessionFinishEvent">TBrookSessionFinishEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a pointer to the session finish event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookSessionExpireEvent"></span><code><b>TBrookSessionExpireEvent</b> = procedure(ASender: TObject; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a type to the session expire event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBrookSessionExpireEvent"></span><code><b>PBrookSessionExpireEvent</b> = &circ;<a  href="BrookSession.html#TBrookSessionExpireEvent">TBrookSessionExpireEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a pointer to the session expire event.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

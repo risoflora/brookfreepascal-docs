@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookMiddleware: Class TBrookMiddleware</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<span id="TBrookMiddleware"></span><h1 class="cio">Class TBrookMiddleware</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookMiddleware.html">BrookMiddleware</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookMiddleware = class(<a class="normal" href="BrookClasses.TBrookComponent.html">TBrookComponent</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Intermediates two classes through a <code>TBrookExecuteActionEvent</code> event.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal" href="BrookClasses.TBrookComponent.html">TBrookComponent</a></li>
+<li class="thisitem">TBrookMiddleware</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookMiddleware.TBrookMiddleware.html#DoExecute">DoExecute</a></b>(ASender: TObject; AAction: <a  href="BrookAction.TBrookAction.html">TBrookAction</a>; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; const ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>; ARoute: <a  href="BrookRouter.TBrookRoute.html">TBrookRoute</a>; var AHandled: Boolean); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookMiddleware.TBrookMiddleware.html#Create">Create</a></b>(ABoundEvent: <a  href="BrookRouter.html#PBrookExecuteActionEvent">PBrookExecuteActionEvent</a>); overload; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookMiddleware.TBrookMiddleware.html#Execute">Execute</a></b>(ASender: TObject; AAction: <a  href="BrookAction.TBrookAction.html">TBrookAction</a>; ARoute: <a  href="BrookRouter.TBrookRoute.html">TBrookRoute</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookMiddleware.TBrookMiddleware.html#BindExecution">BindExecution</a></b>(AEvent: <a  href="BrookRouter.html#PBrookExecuteActionEvent">PBrookExecuteActionEvent</a>);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookMiddleware.TBrookMiddleware.html#OnExecute">OnExecute</a></b>: <a  href="BrookMiddleware.html#TBrookMiddlewareExecuteEvent">TBrookMiddlewareExecuteEvent</a> read FOnExecute
+      write FOnExecute;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="DoExecute"></span><code>procedure <b>DoExecute</b>(ASender: TObject; AAction: <a  href="BrookAction.TBrookAction.html">TBrookAction</a>; ARequest: <a  href="BrookHttpDefs.html#TBrookRequest">TBrookRequest</a>; AResponse: <a  href="BrookHttpDefs.html#TBrookResponse">TBrookResponse</a>; const ANames, AValues: <a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a>; ARoute: <a  href="BrookRouter.TBrookRoute.html">TBrookRoute</a>; var AHandled: Boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(ABoundEvent: <a  href="BrookRouter.html#PBrookExecuteActionEvent">PBrookExecuteActionEvent</a>); overload; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of a <a class="normal" href="BrookMiddleware.TBrookMiddleware.html">TBrookMiddleware</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Execute"></span><code>procedure <b>Execute</b>(ASender: TObject; AAction: <a  href="BrookAction.TBrookAction.html">TBrookAction</a>; ARoute: <a  href="BrookRouter.TBrookRoute.html">TBrookRoute</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered when the <code>DoExecute</code> method bound in this class is executed.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BindExecution"></span><code>procedure <b>BindExecution</b>(AEvent: <a  href="BrookRouter.html#PBrookExecuteActionEvent">PBrookExecuteActionEvent</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Bindes a <code>TBrookExecuteActionEvent</code> event to this class keeping the implementation of a previously declared event.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="OnExecute"></span><code>property <b>OnExecute</b>: <a  href="BrookMiddleware.html#TBrookMiddlewareExecuteEvent">TBrookMiddlewareExecuteEvent</a> read FOnExecute
+      write FOnExecute;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered when the <code>Execute</code> method bound in this class is executed.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookUtils</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<h1 class="unit">Unit BrookUtils</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section"><a class="section" href="#PasDoc-FuncsProcs">Functions and Procedures</a></div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Utilities unit.</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Record&nbsp;<a class="bold" href="BrookUtils.TBrookSettings.html"><code>TBrookSettings</code></a></td>
+<td class="itemdesc">Stores the Brook settings.</td>
+</tr>
+</table>
+<span id="PasDoc-FuncsProcs"></span><h3 class="summary">Functions and Procedures</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookStartsChar">BrookStartsChar</a></b>(const Ch: Char; const S: string): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookEndsChar">BrookEndsChar</a></b>(const Ch: Char; const S: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookExtractPathLevels">BrookExtractPathLevels</a></b>(S: string; var R: string; out ALvl: string; out AEndDelim: Boolean; const ADelimiter: Char = <a  href="BrookConsts.html#US">US</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookGetPathLevel">BrookGetPathLevel</a></b>(const APath: string; const AIndex: SizeInt = 0; const ADelimiter: Char = <a  href="BrookConsts.html#US">US</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookGetPathLevels">BrookGetPathLevels</a></b>(const APath: string; const AIndex: SizeInt = 0; const ADelimiter: Char = <a  href="BrookConsts.html#US">US</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookMatchMethod">BrookMatchMethod</a></b>(const ABrookMethod: <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a>; const AMethod: string): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookFileDate">BrookFileDate</a></b>(const AFileName: TFileName): TDateTime;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookDumpStack">BrookDumpStack</a></b>(const AEOL: ShortString = <a  href="BrookConsts.html#BR">BR</a>): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookDumpStackTrace">BrookDumpStackTrace</a></b>(const AEOL: ShortString = <a  href="BrookConsts.html#BR">BR</a>): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookExcludeTrailingUrlDelimiter">BrookExcludeTrailingUrlDelimiter</a></b>(const AUrl: string): string;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookIncludeTrailingUrlDelimiter">BrookIncludeTrailingUrlDelimiter</a></b>(const AUrl: string): string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookExists">BrookExists</a></b>(const S: string; const AParts: array of string): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>function <b><a  href="BrookUtils.html#BrookExists">BrookExists</a></b>(const S: string; const AParts: array of string; const AIgnoreCase: Boolean): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookStringToObject">BrookStringToObject</a></b>(AObject: TObject; APropInfo: PPropInfo; const AValue: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookStringToObject">BrookStringToObject</a></b>(AObject: TObject; const AName, AValue: string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeStringToObject">BrookSafeStringToObject</a></b>(AObject: TObject; const AName, AValue: string);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookStringsToObject">BrookStringsToObject</a></b>(AObject: TObject; AStrings: TStrings); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookStringsToObject">BrookStringsToObject</a></b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookStringsToObject">BrookStringsToObject</a></b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeStringsToObject">BrookSafeStringsToObject</a></b>(AObject: TObject; AStrings: TStrings); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeStringsToObject">BrookSafeStringsToObject</a></b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeStringsToObject">BrookSafeStringsToObject</a></b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookObjectToString">BrookObjectToString</a></b>(AObject: TObject; APropInfo: PPropInfo; out AValue: string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookObjectToString">BrookObjectToString</a></b>(AObject: TObject; const AName: string; out AValue: string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeObjectToString">BrookSafeObjectToString</a></b>(AObject: TObject; const AName: string; out AValue: string);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookObjectToStrings">BrookObjectToStrings</a></b>(AObject: TObject; AStrings: TStrings); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookObjectToStrings">BrookObjectToStrings</a></b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookObjectToStrings">BrookObjectToStrings</a></b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeObjectToStrings">BrookSafeObjectToStrings</a></b>(AObject: TObject; AStrings: TStrings); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeObjectToStrings">BrookSafeObjectToStrings</a></b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeObjectToStrings">BrookSafeObjectToStrings</a></b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookCopyObject">BrookCopyObject</a></b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookCopyObject">BrookCopyObject</a></b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookCopyObject">BrookCopyObject</a></b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookCopyObject">BrookCopyObject</a></b>(AFrom, ATo: TObject); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookCopyObject">BrookCopyObject</a></b>(AFrom, ATo: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookCopyObject">BrookCopyObject</a></b>(AFrom, ATo: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeCopyObject">BrookSafeCopyObject</a></b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeCopyObject">BrookSafeCopyObject</a></b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeCopyObject">BrookSafeCopyObject</a></b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeCopyObject">BrookSafeCopyObject</a></b>(AFrom, ATo: TObject); overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeCopyObject">BrookSafeCopyObject</a></b>(AFrom, ATo: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code>procedure <b><a  href="BrookUtils.html#BrookSafeCopyObject">BrookSafeCopyObject</a></b>(AFrom, ATo: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookUtils.html#TBrookArrayOfString">TBrookArrayOfString</a></b> = array of string;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a></b> = (...);</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookUtils.html#BrookSettings">BrookSettings</a></b>: <a  href="BrookUtils.TBrookSettings.html">TBrookSettings</a> = (
+    Mapped: False;
+    Charset: <a  href="BrookHttpConsts.html#BROOK_HTTP_CHARSET_UTF_8">BROOK_HTTP_CHARSET_UTF_8</a>;
+    ContentType: <a  href="BrookHttpConsts.html#BROOK_HTTP_CONTENT_TYPE_TEXT_HTML">BROOK_HTTP_CONTENT_TYPE_TEXT_HTML</a>;
+    Page404: <a  href="BrookHttpConsts.html#BROOK_HTTP_RESPONSE_TEMPLATE_NOT_FOUND">BROOK_HTTP_RESPONSE_TEMPLATE_NOT_FOUND</a>;
+    Page404File: <a  href="BrookConsts.html#ES">ES</a>;
+    Page500: <a  href="BrookHttpConsts.html#BROOK_HTTP_RESPONSE_TEMPLATE_INTERNAL_SERVER_ERROR">BROOK_HTTP_RESPONSE_TEMPLATE_INTERNAL_SERVER_ERROR</a>;
+    Page500File: <a  href="BrookConsts.html#ES">ES</a>;
+    DirectoryForUploads: <a  href="BrookConsts.html#ES">ES</a>;
+    DeleteUploadedFiles: False;
+    KeepUploadedNames: True;
+    Configuration: <a  href="BrookConsts.html#ES">ES</a>;
+    RootUrl: <a  href="BrookConsts.html#ES">ES</a>;
+    Port: 0;
+    LogActive: False;
+    LogFile: <a  href="BrookConsts.html#ES">ES</a>;
+    OnError: nil;
+  );</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Functions and Procedures</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookStartsChar"></span><code>function <b>BrookStartsChar</b>(const Ch: Char; const S: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Check whether a string starts with a given character.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookEndsChar"></span><code>function <b>BrookEndsChar</b>(const Ch: Char; const S: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Check whether a string ends with a given character.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookExtractPathLevels"></span><code>procedure <b>BrookExtractPathLevels</b>(S: string; var R: string; out ALvl: string; out AEndDelim: Boolean; const ADelimiter: Char = <a  href="BrookConsts.html#US">US</a>);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the next pathinfo level.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookGetPathLevel"></span><code>function <b>BrookGetPathLevel</b>(const APath: string; const AIndex: SizeInt = 0; const ADelimiter: Char = <a  href="BrookConsts.html#US">US</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the path level passing the respective index. Exemple:
+
+<p><code>BrookGetPathLavel('/a/b/c/', 1)</code> = b.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookGetPathLevels"></span><code>function <b>BrookGetPathLevels</b>(const APath: string; const AIndex: SizeInt = 0; const ADelimiter: Char = <a  href="BrookConsts.html#US">US</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the path from the level correspondent to the index to the last level. Exemple:
+
+<p><code>BrookGetPathLevels('/a/b/c/', 1)</code> = b/c/.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookMatchMethod"></span><code>function <b>BrookMatchMethod</b>(const ABrookMethod: <a  href="BrookUtils.html#TBrookRequestMethod">TBrookRequestMethod</a>; const AMethod: string): Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Checks if a string is equivalent an enumerator representing a HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookFileDate"></span><code>function <b>BrookFileDate</b>(const AFileName: TFileName): TDateTime;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Get the datetime of a file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookDumpStack"></span><code>function <b>BrookDumpStack</b>(const AEOL: ShortString = <a  href="BrookConsts.html#BR">BR</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Writes a backtrace of the current exception.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookDumpStackTrace"></span><code>function <b>BrookDumpStackTrace</b>(const AEOL: ShortString = <a  href="BrookConsts.html#BR">BR</a>): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Writes a stack trace of the current exception.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookExcludeTrailingUrlDelimiter"></span><code>function <b>BrookExcludeTrailingUrlDelimiter</b>(const AUrl: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ensures Url ends without delimiter.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookIncludeTrailingUrlDelimiter"></span><code>function <b>BrookIncludeTrailingUrlDelimiter</b>(const AUrl: string): string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ensures Url ends with delimiter.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookExists"></span><code>function <b>BrookExists</b>(const S: string; const AParts: array of string): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Checks if a string exists in an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookExists"></span><code>function <b>BrookExists</b>(const S: string; const AParts: array of string; const AIgnoreCase: Boolean): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Checks (ignoring case) if a string exists in an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookStringToObject"></span><code>procedure <b>BrookStringToObject</b>(AObject: TObject; APropInfo: PPropInfo; const AValue: string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills a published property of an object passing the property as <code>PPropInfo</code> and value as <code>string</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookStringToObject"></span><code>procedure <b>BrookStringToObject</b>(AObject: TObject; const AName, AValue: string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills a published property of an object passing the name and value as <code>string</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeStringToObject"></span><code>procedure <b>BrookSafeStringToObject</b>(AObject: TObject; const AName, AValue: string);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills a published property of an object passing the name and value as string and checking the params.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookStringsToObject"></span><code>procedure <b>BrookStringsToObject</b>(AObject: TObject; AStrings: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills the published properties of an object passing the names and values as a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookStringsToObject"></span><code>procedure <b>BrookStringsToObject</b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills the published properties of an object passing the names and values as a list of strings. Allows to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookStringsToObject"></span><code>procedure <b>BrookStringsToObject</b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills the published properties of an object passing the names and values as a list of strings. Allows to ignore properties via a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeStringsToObject"></span><code>procedure <b>BrookSafeStringsToObject</b>(AObject: TObject; AStrings: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills the published properties of an object passing the names and values as a list of strings and checking the params.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeStringsToObject"></span><code>procedure <b>BrookSafeStringsToObject</b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills the published properties of an object passing the names and values as a list of strings and checking the params. Allows to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeStringsToObject"></span><code>procedure <b>BrookSafeStringsToObject</b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Fills the published properties of an object passing the names and values as a list of strings and checking the params. Allows to ignore properties via a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookObjectToString"></span><code>procedure <b>BrookObjectToString</b>(AObject: TObject; APropInfo: PPropInfo; out AValue: string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads a published property of an object passing the property as <code>PPropInfo</code> and getting the value as <code>string</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookObjectToString"></span><code>procedure <b>BrookObjectToString</b>(AObject: TObject; const AName: string; out AValue: string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads a published property of an object passing the name as <code>string</code> and getting the value as <code>string</code>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeObjectToString"></span><code>procedure <b>BrookSafeObjectToString</b>(AObject: TObject; const AName: string; out AValue: string);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads a published property of an object passing the name, getting the value as string and checking the params.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookObjectToStrings"></span><code>procedure <b>BrookObjectToStrings</b>(AObject: TObject; AStrings: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads the published properties of an object getting the names and values as a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookObjectToStrings"></span><code>procedure <b>BrookObjectToStrings</b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads the published properties of an object getting the names and values as a list of strings. Allows to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookObjectToStrings"></span><code>procedure <b>BrookObjectToStrings</b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads the published properties of an object getting the names and values as a list of strings. Allows to ignore properties via a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeObjectToStrings"></span><code>procedure <b>BrookSafeObjectToStrings</b>(AObject: TObject; AStrings: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads the published properties of an object getting the names and values as a list of strings and checking the params.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeObjectToStrings"></span><code>procedure <b>BrookSafeObjectToStrings</b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads the published properties of an object getting the names and values as a list of strings and checking the params. Allows to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeObjectToStrings"></span><code>procedure <b>BrookSafeObjectToStrings</b>(AObject: TObject; AStrings: TStrings; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Reads the published properties of an object getting the names and values as a list of strings and checking the params.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookCopyObject"></span><code>procedure <b>BrookCopyObject</b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another passing the prop. list and prop. count.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookCopyObject"></span><code>procedure <b>BrookCopyObject</b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another passing the prop. list and prop. count. Allows to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookCopyObject"></span><code>procedure <b>BrookCopyObject</b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another passing the prop. list and prop. count. Allows to ignore properties via a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookCopyObject"></span><code>procedure <b>BrookCopyObject</b>(AFrom, ATo: TObject); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookCopyObject"></span><code>procedure <b>BrookCopyObject</b>(AFrom, ATo: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another. Allows to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookCopyObject"></span><code>procedure <b>BrookCopyObject</b>(AFrom, ATo: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another. Allows to ignore properties via a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeCopyObject"></span><code>procedure <b>BrookSafeCopyObject</b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another passing the prop. list and prop. count and checking the params.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeCopyObject"></span><code>procedure <b>BrookSafeCopyObject</b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another passing the prop. list and prop. count and checking the params. Allows to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeCopyObject"></span><code>procedure <b>BrookSafeCopyObject</b>(APropList: PPropList; const APropCount: Integer; AFrom, ATo: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another passing the prop. list and prop. count and checking the params. Allows to ignore properties via a list of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeCopyObject"></span><code>procedure <b>BrookSafeCopyObject</b>(AFrom, ATo: TObject); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another and checking the params.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeCopyObject"></span><code>procedure <b>BrookSafeCopyObject</b>(AFrom, ATo: TObject; const AIgnoredProps: array of string); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another and checking the params. Allows to ignore properties via an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSafeCopyObject"></span><code>procedure <b>BrookSafeCopyObject</b>(AFrom, ATo: TObject; const AIgnoredProps: TStrings); overload;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Copies the value of all properties from one object to another and checking the params. Allows to ignore properties via a list of strings.</p>
+</td></tr>
+</table>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookArrayOfString"></span><code><b>TBrookArrayOfString</b> = array of string;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines an array of strings.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookRequestMethod"></span><code><b>TBrookRequestMethod</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines an enumerator to represent the HTTP request methods.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="rmUnknown">rmUnknown</span></li>
+<li>
+<span id="rmAll">rmAll</span></li>
+<li>
+<span id="rmGet">rmGet</span></li>
+<li>
+<span id="rmPost">rmPost</span></li>
+<li>
+<span id="rmPut">rmPut</span></li>
+<li>
+<span id="rmDelete">rmDelete</span></li>
+<li>
+<span id="rmHead">rmHead</span></li>
+<li>
+<span id="rmOptions">rmOptions</span></li>
+<li>
+<span id="rmTrace">rmTrace</span></li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="BrookSettings"></span><code><b>BrookSettings</b>: <a  href="BrookUtils.TBrookSettings.html">TBrookSettings</a> = (
+    Mapped: False;
+    Charset: <a  href="BrookHttpConsts.html#BROOK_HTTP_CHARSET_UTF_8">BROOK_HTTP_CHARSET_UTF_8</a>;
+    ContentType: <a  href="BrookHttpConsts.html#BROOK_HTTP_CONTENT_TYPE_TEXT_HTML">BROOK_HTTP_CONTENT_TYPE_TEXT_HTML</a>;
+    Page404: <a  href="BrookHttpConsts.html#BROOK_HTTP_RESPONSE_TEMPLATE_NOT_FOUND">BROOK_HTTP_RESPONSE_TEMPLATE_NOT_FOUND</a>;
+    Page404File: <a  href="BrookConsts.html#ES">ES</a>;
+    Page500: <a  href="BrookHttpConsts.html#BROOK_HTTP_RESPONSE_TEMPLATE_INTERNAL_SERVER_ERROR">BROOK_HTTP_RESPONSE_TEMPLATE_INTERNAL_SERVER_ERROR</a>;
+    Page500File: <a  href="BrookConsts.html#ES">ES</a>;
+    DirectoryForUploads: <a  href="BrookConsts.html#ES">ES</a>;
+    DeleteUploadedFiles: False;
+    KeepUploadedNames: True;
+    Configuration: <a  href="BrookConsts.html#ES">ES</a>;
+    RootUrl: <a  href="BrookConsts.html#ES">ES</a>;
+    Port: 0;
+    LogActive: False;
+    LogFile: <a  href="BrookConsts.html#ES">ES</a>;
+    OnError: nil;
+  );</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Global variable to store Brook settings.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

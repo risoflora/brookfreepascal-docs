@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookMessages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<h1 class="unit">Unit BrookMessages</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section">Classes, Interfaces, Objects and Records</div><div class="one_section">Functions and Procedures</div><div class="one_section">Types</div><div class="one_section"><a class="section" href="#PasDoc-Constants">Constants</a></div><div class="one_section"><a class="section" href="#PasDoc-Variables">Variables</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Messages unit.</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Constants"></span><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookDefaultLocale_rst">SBrookDefaultLocale_rst</a></b> = 'en-US';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookInvalidRequestMethodError_rst">SBrookInvalidRequestMethodError_rst</a></b> = 'Invalid request method: %s';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookItemNotFoundError_rst">SBrookItemNotFoundError_rst</a></b> = 'Item &quot;%s&quot; not found.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookFileNotFoundError_rst">SBrookFileNotFoundError_rst</a></b> = 'File not found: %s';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoRequestMethodError_rst">SBrookNoRequestMethodError_rst</a></b> = 'No REQUEST_METHOD passed from server.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoApplicationRegisteredError_rst">SBrookNoApplicationRegisteredError_rst</a></b> = 'No application registered.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookApplicationAlreadyRegisteredError_rst">SBrookApplicationAlreadyRegisteredError_rst</a></b> = 'The application is already registered.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookRegiterTBrookActionError_rst">SBrookRegiterTBrookActionError_rst</a></b> = 'Unable to register the type TBrookAction directly.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookActionAlreadyRegisteredError_rst">SBrookActionAlreadyRegisteredError_rst</a></b> = 'The action &quot;%s&quot; is already registered.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookDefaultActionAlreadyRegisteredError_rst">SBrookDefaultActionAlreadyRegisteredError_rst</a></b> = 'There is already a default action registered.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookPatternAlreadyRegisteredError_rst">SBrookPatternAlreadyRegisteredError_rst</a></b> = 'There is already an action registered with the pattern &quot;%s&quot;.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookRouterServiceAlreadyRegisteredError_rst">SBrookRouterServiceAlreadyRegisteredError_rst</a></b> = 'The router service is already registered.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoRouterServiceRegisteredError_rst">SBrookNoRouterServiceRegisteredError_rst</a></b> = 'No router service registered.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoRouteRegisteredError_rst">SBrookNoRouteRegisteredError_rst</a></b> = 'No route registered.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookCfgFileNotFoundError_rst">SBrookCfgFileNotFoundError_rst</a></b> = 'The config file was not found: &quot;%s&quot;';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNotNilError_rst">SBrookNotNilError_rst</a></b> = '&quot;%s&quot; must not be nil.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookEmptyLibraryNameError_rst">SBrookEmptyLibraryNameError_rst</a></b> = 'The library name must not be empty.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookMethodNotAllowedError_rst">SBrookMethodNotAllowedError_rst</a></b> = 'HTTP method not allowed for the requested resource.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookConstraintAlreadyRegisteredError_rst">SBrookConstraintAlreadyRegisteredError_rst</a></b> = 'The constraint &quot;%s&quot; is already registered.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookConstraintsServiceAlreadyRegisteredError_rst">SBrookConstraintsServiceAlreadyRegisteredError_rst</a></b> = 'The constraints service is already registered.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoConstraintsServiceRegisteredError_rst">SBrookNoConstraintsServiceRegisteredError_rst</a></b> = 'No constraints service registered.';</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoLoggerServiceRegisteredError_rst">SBrookNoLoggerServiceRegisteredError_rst</a></b> = 'No logger service registered.';</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookLoggerServiceAlreadyRegisteredError_rst">SBrookLoggerServiceAlreadyRegisteredError_rst</a></b> = 'The logger service is already registered.';</code></td>
+</tr>
+</table>
+<span id="PasDoc-Variables"></span><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookDefaultLocale">SBrookDefaultLocale</a></b>: string = <a  href="BrookMessages.html#SBrookDefaultLocale_rst">SBrookDefaultLocale_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookInvalidRequestMethodError">SBrookInvalidRequestMethodError</a></b>: string = <a  href="BrookMessages.html#SBrookInvalidRequestMethodError_rst">SBrookInvalidRequestMethodError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookItemNotFoundError">SBrookItemNotFoundError</a></b>: string = <a  href="BrookMessages.html#SBrookItemNotFoundError_rst">SBrookItemNotFoundError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookFileNotFoundError">SBrookFileNotFoundError</a></b>: string = <a  href="BrookMessages.html#SBrookFileNotFoundError_rst">SBrookFileNotFoundError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoRequestMethodError">SBrookNoRequestMethodError</a></b>: string = <a  href="BrookMessages.html#SBrookNoRequestMethodError_rst">SBrookNoRequestMethodError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoApplicationRegisteredError">SBrookNoApplicationRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookNoApplicationRegisteredError_rst">SBrookNoApplicationRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookApplicationAlreadyRegisteredError">SBrookApplicationAlreadyRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookApplicationAlreadyRegisteredError_rst">SBrookApplicationAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookRegiterTBrookActionError">SBrookRegiterTBrookActionError</a></b>: string = <a  href="BrookMessages.html#SBrookRegiterTBrookActionError_rst">SBrookRegiterTBrookActionError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookActionAlreadyRegisteredError">SBrookActionAlreadyRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookActionAlreadyRegisteredError_rst">SBrookActionAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookDefaultActionAlreadyRegisteredError">SBrookDefaultActionAlreadyRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookDefaultActionAlreadyRegisteredError_rst">SBrookDefaultActionAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookPatternAlreadyRegisteredError">SBrookPatternAlreadyRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookPatternAlreadyRegisteredError_rst">SBrookPatternAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookRouterServiceAlreadyRegisteredError">SBrookRouterServiceAlreadyRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookRouterServiceAlreadyRegisteredError_rst">SBrookRouterServiceAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoRouterServiceRegisteredError">SBrookNoRouterServiceRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookNoRouterServiceRegisteredError_rst">SBrookNoRouterServiceRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoRouteRegisteredError">SBrookNoRouteRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookNoRouteRegisteredError_rst">SBrookNoRouteRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookCfgFileNotFoundError">SBrookCfgFileNotFoundError</a></b>: string = <a  href="BrookMessages.html#SBrookCfgFileNotFoundError_rst">SBrookCfgFileNotFoundError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNotNilError">SBrookNotNilError</a></b>: string = <a  href="BrookMessages.html#SBrookNotNilError_rst">SBrookNotNilError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookEmptyLibraryNameError">SBrookEmptyLibraryNameError</a></b>: string = <a  href="BrookMessages.html#SBrookEmptyLibraryNameError_rst">SBrookEmptyLibraryNameError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookMethodNotAllowedError">SBrookMethodNotAllowedError</a></b>: string = <a  href="BrookMessages.html#SBrookMethodNotAllowedError_rst">SBrookMethodNotAllowedError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookConstraintAlreadyRegisteredError">SBrookConstraintAlreadyRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookConstraintAlreadyRegisteredError_rst">SBrookConstraintAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookConstraintsServiceAlreadyRegisteredError">SBrookConstraintsServiceAlreadyRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookConstraintsServiceAlreadyRegisteredError_rst">SBrookConstraintsServiceAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoConstraintsServiceRegisteredError">SBrookNoConstraintsServiceRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookNoConstraintsServiceRegisteredError_rst">SBrookNoConstraintsServiceRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookNoLoggerServiceRegisteredError">SBrookNoLoggerServiceRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookNoLoggerServiceRegisteredError_rst">SBrookNoLoggerServiceRegisteredError_rst</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookMessages.html#SBrookLoggerServiceAlreadyRegisteredError">SBrookLoggerServiceAlreadyRegisteredError</a></b>: string = <a  href="BrookMessages.html#SBrookLoggerServiceAlreadyRegisteredError_rst">SBrookLoggerServiceAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookDefaultLocale_rst"></span><code><b>SBrookDefaultLocale_rst</b> = 'en-US';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookInvalidRequestMethodError_rst"></span><code><b>SBrookInvalidRequestMethodError_rst</b> = 'Invalid request method: %s';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookItemNotFoundError_rst"></span><code><b>SBrookItemNotFoundError_rst</b> = 'Item &quot;%s&quot; not found.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookFileNotFoundError_rst"></span><code><b>SBrookFileNotFoundError_rst</b> = 'File not found: %s';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoRequestMethodError_rst"></span><code><b>SBrookNoRequestMethodError_rst</b> = 'No REQUEST_METHOD passed from server.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoApplicationRegisteredError_rst"></span><code><b>SBrookNoApplicationRegisteredError_rst</b> = 'No application registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookApplicationAlreadyRegisteredError_rst"></span><code><b>SBrookApplicationAlreadyRegisteredError_rst</b> = 'The application is already registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookRegiterTBrookActionError_rst"></span><code><b>SBrookRegiterTBrookActionError_rst</b> = 'Unable to register the type TBrookAction directly.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookActionAlreadyRegisteredError_rst"></span><code><b>SBrookActionAlreadyRegisteredError_rst</b> = 'The action &quot;%s&quot; is already registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookDefaultActionAlreadyRegisteredError_rst"></span><code><b>SBrookDefaultActionAlreadyRegisteredError_rst</b> = 'There is already a default action registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookPatternAlreadyRegisteredError_rst"></span><code><b>SBrookPatternAlreadyRegisteredError_rst</b> = 'There is already an action registered with the pattern &quot;%s&quot;.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookRouterServiceAlreadyRegisteredError_rst"></span><code><b>SBrookRouterServiceAlreadyRegisteredError_rst</b> = 'The router service is already registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoRouterServiceRegisteredError_rst"></span><code><b>SBrookNoRouterServiceRegisteredError_rst</b> = 'No router service registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoRouteRegisteredError_rst"></span><code><b>SBrookNoRouteRegisteredError_rst</b> = 'No route registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookCfgFileNotFoundError_rst"></span><code><b>SBrookCfgFileNotFoundError_rst</b> = 'The config file was not found: &quot;%s&quot;';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNotNilError_rst"></span><code><b>SBrookNotNilError_rst</b> = '&quot;%s&quot; must not be nil.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookEmptyLibraryNameError_rst"></span><code><b>SBrookEmptyLibraryNameError_rst</b> = 'The library name must not be empty.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookMethodNotAllowedError_rst"></span><code><b>SBrookMethodNotAllowedError_rst</b> = 'HTTP method not allowed for the requested resource.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookConstraintAlreadyRegisteredError_rst"></span><code><b>SBrookConstraintAlreadyRegisteredError_rst</b> = 'The constraint &quot;%s&quot; is already registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookConstraintsServiceAlreadyRegisteredError_rst"></span><code><b>SBrookConstraintsServiceAlreadyRegisteredError_rst</b> = 'The constraints service is already registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoConstraintsServiceRegisteredError_rst"></span><code><b>SBrookNoConstraintsServiceRegisteredError_rst</b> = 'No constraints service registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoLoggerServiceRegisteredError_rst"></span><code><b>SBrookNoLoggerServiceRegisteredError_rst</b> = 'No logger service registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookLoggerServiceAlreadyRegisteredError_rst"></span><code><b>SBrookLoggerServiceAlreadyRegisteredError_rst</b> = 'The logger service is already registered.';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookDefaultLocale"></span><code><b>SBrookDefaultLocale</b>: string = <a  href="BrookMessages.html#SBrookDefaultLocale_rst">SBrookDefaultLocale_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookInvalidRequestMethodError"></span><code><b>SBrookInvalidRequestMethodError</b>: string = <a  href="BrookMessages.html#SBrookInvalidRequestMethodError_rst">SBrookInvalidRequestMethodError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookItemNotFoundError"></span><code><b>SBrookItemNotFoundError</b>: string = <a  href="BrookMessages.html#SBrookItemNotFoundError_rst">SBrookItemNotFoundError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookFileNotFoundError"></span><code><b>SBrookFileNotFoundError</b>: string = <a  href="BrookMessages.html#SBrookFileNotFoundError_rst">SBrookFileNotFoundError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoRequestMethodError"></span><code><b>SBrookNoRequestMethodError</b>: string = <a  href="BrookMessages.html#SBrookNoRequestMethodError_rst">SBrookNoRequestMethodError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoApplicationRegisteredError"></span><code><b>SBrookNoApplicationRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookNoApplicationRegisteredError_rst">SBrookNoApplicationRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookApplicationAlreadyRegisteredError"></span><code><b>SBrookApplicationAlreadyRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookApplicationAlreadyRegisteredError_rst">SBrookApplicationAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookRegiterTBrookActionError"></span><code><b>SBrookRegiterTBrookActionError</b>: string = <a  href="BrookMessages.html#SBrookRegiterTBrookActionError_rst">SBrookRegiterTBrookActionError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookActionAlreadyRegisteredError"></span><code><b>SBrookActionAlreadyRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookActionAlreadyRegisteredError_rst">SBrookActionAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookDefaultActionAlreadyRegisteredError"></span><code><b>SBrookDefaultActionAlreadyRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookDefaultActionAlreadyRegisteredError_rst">SBrookDefaultActionAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookPatternAlreadyRegisteredError"></span><code><b>SBrookPatternAlreadyRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookPatternAlreadyRegisteredError_rst">SBrookPatternAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookRouterServiceAlreadyRegisteredError"></span><code><b>SBrookRouterServiceAlreadyRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookRouterServiceAlreadyRegisteredError_rst">SBrookRouterServiceAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoRouterServiceRegisteredError"></span><code><b>SBrookNoRouterServiceRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookNoRouterServiceRegisteredError_rst">SBrookNoRouterServiceRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoRouteRegisteredError"></span><code><b>SBrookNoRouteRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookNoRouteRegisteredError_rst">SBrookNoRouteRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookCfgFileNotFoundError"></span><code><b>SBrookCfgFileNotFoundError</b>: string = <a  href="BrookMessages.html#SBrookCfgFileNotFoundError_rst">SBrookCfgFileNotFoundError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNotNilError"></span><code><b>SBrookNotNilError</b>: string = <a  href="BrookMessages.html#SBrookNotNilError_rst">SBrookNotNilError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookEmptyLibraryNameError"></span><code><b>SBrookEmptyLibraryNameError</b>: string = <a  href="BrookMessages.html#SBrookEmptyLibraryNameError_rst">SBrookEmptyLibraryNameError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookMethodNotAllowedError"></span><code><b>SBrookMethodNotAllowedError</b>: string = <a  href="BrookMessages.html#SBrookMethodNotAllowedError_rst">SBrookMethodNotAllowedError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookConstraintAlreadyRegisteredError"></span><code><b>SBrookConstraintAlreadyRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookConstraintAlreadyRegisteredError_rst">SBrookConstraintAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookConstraintsServiceAlreadyRegisteredError"></span><code><b>SBrookConstraintsServiceAlreadyRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookConstraintsServiceAlreadyRegisteredError_rst">SBrookConstraintsServiceAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoConstraintsServiceRegisteredError"></span><code><b>SBrookNoConstraintsServiceRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookNoConstraintsServiceRegisteredError_rst">SBrookNoConstraintsServiceRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookNoLoggerServiceRegisteredError"></span><code><b>SBrookNoLoggerServiceRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookNoLoggerServiceRegisteredError_rst">SBrookNoLoggerServiceRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="SBrookLoggerServiceAlreadyRegisteredError"></span><code><b>SBrookLoggerServiceAlreadyRegisteredError</b>: string = <a  href="BrookMessages.html#SBrookLoggerServiceAlreadyRegisteredError_rst">SBrookLoggerServiceAlreadyRegisteredError_rst</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

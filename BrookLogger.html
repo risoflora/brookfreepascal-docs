@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookLogger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<h1 class="unit">Unit BrookLogger</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section">Uses</div><div class="one_section"><a class="section" href="#PasDoc-Classes">Classes, Interfaces, Objects and Records</a></div><div class="one_section">Functions and Procedures</div><div class="one_section"><a class="section" href="#PasDoc-Types">Types</a></div><div class="one_section">Constants</div><div class="one_section">Variables</div></div>
+<span id="PasDoc-Description"></span><h2 class="description">Description</h2>
+<p>
+Logger classes.</p>
+<span id="PasDoc-Uses"></span><h2 class="overview">Overview</h2>
+<span id="PasDoc-Classes"></span><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookLogger.EBrookLogger.html"><code>EBrookLogger</code></a></td>
+<td class="itemdesc">Handles exceptions for <a class="normal" href="BrookLogger.TBrookLogger.html">TBrookLogger</a>.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold" href="BrookLogger.TBrookLogger.html"><code>TBrookLogger</code></a></td>
+<td class="itemdesc">Provides features for the application logging.</td>
+</tr>
+</table>
+<span id="PasDoc-Types"></span><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookLogger.html#TBrookLoggerClass">TBrookLoggerClass</a></b> = class of <a  href="BrookLogger.TBrookLogger.html">TBrookLogger</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookLogger.html#TBrookLogOutput">TBrookLogOutput</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookLogger.html#TBrookLogTypes">TBrookLogTypes</a></b> = set of <a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a  href="BrookLogger.html#TBrookLogEvent">TBrookLogEvent</a></b> = procedure(ASender: TObject; const AType: <a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a>; const S: string; const ACode: Word; const E: Exception; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a  href="BrookLogger.html#PBrookLogEvent">PBrookLogEvent</a></b> = &circ;<a  href="BrookLogger.html#TBrookLogEvent">TBrookLogEvent</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookLoggerClass"></span><code><b>TBrookLoggerClass</b> = class of <a  href="BrookLogger.TBrookLogger.html">TBrookLogger</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a metaclass for <a class="normal" href="BrookLogger.TBrookLogger.html">TBrookLogger</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookLogOutput"></span><code><b>TBrookLogOutput</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines an enumerator to represent the logger output kind.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="loFile">loFile</span></li>
+<li>
+<span id="loSystem">loSystem</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookLogType"></span><code><b>TBrookLogType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines an enumerator to represent the logger event types.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+<span id="ltCustom">ltCustom</span></li>
+<li>
+<span id="ltInfo">ltInfo</span></li>
+<li>
+<span id="ltWarning">ltWarning</span></li>
+<li>
+<span id="ltError">ltError</span></li>
+<li>
+<span id="ltDebug">ltDebug</span></li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookLogTypes"></span><code><b>TBrookLogTypes</b> = set of <a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a set to represent the logger event types.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="TBrookLogEvent"></span><code><b>TBrookLogEvent</b> = procedure(ASender: TObject; const AType: <a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a>; const S: string; const ACode: Word; const E: Exception; var AHandled: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Is a type to the log event.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><span id="PBrookLogEvent"></span><code><b>PBrookLogEvent</b> = &circ;<a  href="BrookLogger.html#TBrookLogEvent">TBrookLogEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Defines a pointer to the log event.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

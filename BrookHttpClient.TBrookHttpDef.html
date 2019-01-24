@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookHttpClient: Class TBrookHttpDef</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<span id="TBrookHttpDef"></span><h1 class="cio">Class TBrookHttpDef</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookHttpClient.html">BrookHttpClient</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookHttpDef = class(<a class="normal" href="BrookClasses.TBrookObject.html">TBrookObject</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Offers general abstract features for HTTP handling.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal" href="BrookClasses.TBrookObject.html">TBrookObject</a></li>
+<li class="thisitem">TBrookHttpDef</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHttpClient.TBrookHttpDef.html#SetContentType">SetContentType</a></b>(AValue: string); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetContentType">GetContentType</a></b>: string; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetClient">GetClient</a></b>: TObject; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetContents">GetContents</a></b>: TStrings; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetCookies">GetCookies</a></b>: TStrings; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetDocument">GetDocument</a></b>: TStream; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetHeaders">GetHeaders</a></b>: TStrings; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetReasonPhrase">GetReasonPhrase</a></b>: string; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetStatusCode">GetStatusCode</a></b>: Integer; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetMethod">GetMethod</a></b>: string; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetUrl">GetUrl</a></b>: string; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHttpClient.TBrookHttpDef.html#SetMethod">SetMethod</a></b>(AValue: string); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHttpClient.TBrookHttpDef.html#SetUrl">SetUrl</a></b>(AValue: string); virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookHttpClient.TBrookHttpDef.html#Create">Create</a></b>; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="BrookHttpClient.TBrookHttpDef.html#Register">Register</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="BrookHttpClient.TBrookHttpDef.html#Unregister">Unregister</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#GetLibrary">GetLibrary</a></b>: string; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookHttpClient.TBrookHttpDef.html#AddHeader">AddHeader</a></b>(const AName, AValue: string); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookHttpClient.TBrookHttpDef.html#Request">Request</a></b>: Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#Get">Get</a></b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#Post">Post</a></b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#Put">Put</a></b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#Delete">Delete</a></b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#Options">Options</a></b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#Head">Head</a></b>(const AUrl: string; AHeaders: TStrings): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#PostForm">PostForm</a></b>(const AUrl: string; AFormData, AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#PostForm">PostForm</a></b>(const AUrl, AFormData: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#PutForm">PutForm</a></b>(const AUrl: string; AFormData, AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#PutForm">PutForm</a></b>(const AUrl, AFormData: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#PostFile">PostFile</a></b>(const AUrl, AFieldName, AFileName: string; AFile, AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookHttpClient.TBrookHttpDef.html#PostFile">PostFile</a></b>(const AUrl, AFieldName, AFileName: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#ContentType">ContentType</a></b>: string read <a  href="BrookHttpClient.TBrookHttpDef.html#GetContentType">GetContentType</a> write <a  href="BrookHttpClient.TBrookHttpDef.html#SetContentType">SetContentType</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#Contents">Contents</a></b>: TStrings read <a  href="BrookHttpClient.TBrookHttpDef.html#GetContents">GetContents</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#Cookies">Cookies</a></b>: TStrings read <a  href="BrookHttpClient.TBrookHttpDef.html#GetCookies">GetCookies</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#Document">Document</a></b>: TStream read <a  href="BrookHttpClient.TBrookHttpDef.html#GetDocument">GetDocument</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#Headers">Headers</a></b>: TStrings read <a  href="BrookHttpClient.TBrookHttpDef.html#GetHeaders">GetHeaders</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#StatusCode">StatusCode</a></b>: Integer read <a  href="BrookHttpClient.TBrookHttpDef.html#GetStatusCode">GetStatusCode</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#ReasonPhrase">ReasonPhrase</a></b>: string read <a  href="BrookHttpClient.TBrookHttpDef.html#GetReasonPhrase">GetReasonPhrase</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#Method">Method</a></b>: string read <a  href="BrookHttpClient.TBrookHttpDef.html#GetMethod">GetMethod</a> write <a  href="BrookHttpClient.TBrookHttpDef.html#SetMethod">SetMethod</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#Url">Url</a></b>: string read <a  href="BrookHttpClient.TBrookHttpDef.html#GetUrl">GetUrl</a> write <a  href="BrookHttpClient.TBrookHttpDef.html#SetUrl">SetUrl</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookHttpClient.TBrookHttpDef.html#Client">Client</a></b>: TObject read <a  href="BrookHttpClient.TBrookHttpDef.html#GetClient">GetClient</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetContentType"></span><code>procedure <b>SetContentType</b>(AValue: string); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetContentType"></span><code>function <b>GetContentType</b>: string; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetClient"></span><code>function <b>GetClient</b>: TObject; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetContents"></span><code>function <b>GetContents</b>: TStrings; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetCookies"></span><code>function <b>GetCookies</b>: TStrings; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetDocument"></span><code>function <b>GetDocument</b>: TStream; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetHeaders"></span><code>function <b>GetHeaders</b>: TStrings; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetReasonPhrase"></span><code>function <b>GetReasonPhrase</b>: string; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetStatusCode"></span><code>function <b>GetStatusCode</b>: Integer; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetMethod"></span><code>function <b>GetMethod</b>: string; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetUrl"></span><code>function <b>GetUrl</b>: string; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetMethod"></span><code>procedure <b>SetMethod</b>(AValue: string); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetUrl"></span><code>procedure <b>SetUrl</b>(AValue: string); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Creates an instance of a <a class="normal" href="BrookHttpClient.TBrookHttpDef.html">TBrookHttpDef</a> class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Register"></span><code>class procedure <b>Register</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register the broker class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Unregister"></span><code>class procedure <b>Unregister</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Unregister the broker class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetLibrary"></span><code>class function <b>GetLibrary</b>: string; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the broker library name, for example: FCLWeb, Synapse, LNet, Indy etc.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AddHeader"></span><code>procedure <b>AddHeader</b>(const AName, AValue: string); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Adds header, replacing an existing one if it exists.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Request"></span><code>function <b>Request</b>: Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request to server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Get"></span><code>class function <b>Get</b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a GET HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Post"></span><code>class function <b>Post</b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a POST HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Put"></span><code>class function <b>Put</b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a PUT HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Delete"></span><code>class function <b>Delete</b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a DELETE HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Options"></span><code>class function <b>Options</b>(const AUrl: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by an OPTIONS HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Head"></span><code>class function <b>Head</b>(const AUrl: string; AHeaders: TStrings): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a HEAD HTTP request method.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PostForm"></span><code>class function <b>PostForm</b>(const AUrl: string; AFormData, AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a POST HTTP request method, passing a form-data as parameter.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PostForm"></span><code>class function <b>PostForm</b>(const AUrl, AFormData: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a POST HTTP request method, passing a form-data as parameter.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutForm"></span><code>class function <b>PutForm</b>(const AUrl: string; AFormData, AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a PUT HTTP request method, passing a form-data as parameter.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PutForm"></span><code>class function <b>PutForm</b>(const AUrl, AFormData: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a PUT HTTP request method, passing a form-data as parameter.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PostFile"></span><code>class function <b>PostFile</b>(const AUrl, AFieldName, AFileName: string; AFile, AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a POST HTTP request method, passing a file as parameter.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="PostFile"></span><code>class function <b>PostFile</b>(const AUrl, AFieldName, AFileName: string; AResponse: TStream): Boolean; virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sends request by a POST HTTP request method, passing a file as parameter.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ContentType"></span><code>property <b>ContentType</b>: string read <a  href="BrookHttpClient.TBrookHttpDef.html#GetContentType">GetContentType</a> write <a  href="BrookHttpClient.TBrookHttpDef.html#SetContentType">SetContentType</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Content type of sending data.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Contents"></span><code>property <b>Contents</b>: TStrings read <a  href="BrookHttpClient.TBrookHttpDef.html#GetContents">GetContents</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Strings received from the request.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Cookies"></span><code>property <b>Cookies</b>: TStrings read <a  href="BrookHttpClient.TBrookHttpDef.html#GetCookies">GetCookies</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set cookies to be sent and/or received from the server.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Document"></span><code>property <b>Document</b>: TStream read <a  href="BrookHttpClient.TBrookHttpDef.html#GetDocument">GetDocument</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Document received from the request.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Headers"></span><code>property <b>Headers</b>: TStrings read <a  href="BrookHttpClient.TBrookHttpDef.html#GetHeaders">GetHeaders</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Request headers.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="StatusCode"></span><code>property <b>StatusCode</b>: Integer read <a  href="BrookHttpClient.TBrookHttpDef.html#GetStatusCode">GetStatusCode</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Result code after successful request.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="ReasonPhrase"></span><code>property <b>ReasonPhrase</b>: string read <a  href="BrookHttpClient.TBrookHttpDef.html#GetReasonPhrase">GetReasonPhrase</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Result text after successful request.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Method"></span><code>property <b>Method</b>: string read <a  href="BrookHttpClient.TBrookHttpDef.html#GetMethod">GetMethod</a> write <a  href="BrookHttpClient.TBrookHttpDef.html#SetMethod">SetMethod</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Method for requests.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Url"></span><code>property <b>Url</b>: string read <a  href="BrookHttpClient.TBrookHttpDef.html#GetUrl">GetUrl</a> write <a  href="BrookHttpClient.TBrookHttpDef.html#SetUrl">SetUrl</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+URL that request is driven to.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Client"></span><code>property <b>Client</b>: TObject read <a  href="BrookHttpClient.TBrookHttpDef.html#GetClient">GetClient</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is the instance of the HTTP client broker.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>

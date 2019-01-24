@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>BrookLogger: Class TBrookLogger</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="generator" content="PasDoc 0.15.0">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body>
+<table class="container"><tr><td class="navigation">
+<p><a href="AllUnits.html" class="navigation">Units</a></p><p><a href="ClassHierarchy.html" class="navigation">Class Hierarchy</a></p><p><a href="AllClasses.html" class="navigation">Classes, Interfaces, Objects and Records</a></p><p><a href="AllTypes.html" class="navigation">Types</a></p><p><a href="AllVariables.html" class="navigation">Variables</a></p><p><a href="AllConstants.html" class="navigation">Constants</a></p><p><a href="AllFunctions.html" class="navigation">Functions and Procedures</a></p><p><a href="AllIdentifiers.html" class="navigation">Identifiers</a></p><p><a href="GVUses.png" class="navigation">Unit dependency graph</a></p><p><a href="GVClasses.png" class="navigation">Classes hierarchy graph</a></p></td><td class="content">
+<span id="TBrookLogger"></span><h1 class="cio">Class TBrookLogger</h1>
+<div class="sections">
+<div class="one_section"><a class="section" href="#PasDoc-Description">Description</a></div><div class="one_section"><a class="section" href="#PasDoc-Hierarchy">Hierarchy</a></div><div class="one_section">Fields</div><div class="one_section"><a class="section" href="#PasDoc-Methods">Methods</a></div><div class="one_section"><a class="section" href="#PasDoc-Properties">Properties</a></div></div>
+<span id="PasDoc-Description"></span><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a  href="BrookLogger.html">BrookLogger</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TBrookLogger = class(<a class="normal" href="BrookClasses.TBrookComponent.html">TBrookComponent</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Provides features for the application logging.</p>
+<span id="PasDoc-Hierarchy"></span><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TComponent</li>
+<li class="ancestor"><a class="normal" href="BrookClasses.TBrookComponent.html">TBrookComponent</a></li>
+<li class="thisitem">TBrookLogger</li></ul><h2 class="overview">Overview</h2>
+<span id="PasDoc-Methods"></span><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookLogger.TBrookLogger.html#GetActive">GetActive</a></b>: Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#SetActive">SetActive</a></b>(const AValue: Boolean); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookLogger.TBrookLogger.html#GetFileName">GetFileName</a></b>: TFileName; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#SetFileName">SetFileName</a></b>(const AValue: TFileName); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#SetOutput">SetOutput</a></b>(const AValue: <a  href="BrookLogger.html#TBrookLogOutput">TBrookLogOutput</a>); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>function <b><a  href="BrookLogger.TBrookLogger.html#GetOutput">GetOutput</a></b>: <a  href="BrookLogger.html#TBrookLogOutput">TBrookLogOutput</a>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a  href="BrookLogger.TBrookLogger.html#Create">Create</a></b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookLogger.TBrookLogger.html#GetServiceClass">GetServiceClass</a></b>: <a  href="BrookLogger.html#TBrookLoggerClass">TBrookLoggerClass</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="BrookLogger.TBrookLogger.html#RegisterService">RegisterService</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a  href="BrookLogger.TBrookLogger.html#UnregisterService">UnregisterService</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a  href="BrookLogger.TBrookLogger.html#Service">Service</a></b>: <a  href="BrookLogger.TBrookLogger.html">TBrookLogger</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#Prepare">Prepare</a></b>; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#Unprepare">Unprepare</a></b>; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#Log">Log</a></b>(const AType: <a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a>; const S: string; const ACode: Word; const E: Exception = nil); virtual; abstract;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#DoLog">DoLog</a></b>(const AType: <a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a>; const S: string; const ACode: Word; const E: Exception = nil); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#Custom">Custom</a></b>(const S: string; const ACode: Word); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#Info">Info</a></b>(const S: string); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#Warn">Warn</a></b>(const S: string); virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#Debug">Debug</a></b>(const S: string); virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a  href="BrookLogger.TBrookLogger.html#Error">Error</a></b>(const S: string; E: Exception = nil); virtual;</code></td>
+</tr>
+</table>
+<span id="PasDoc-Properties"></span><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookLogger.TBrookLogger.html#Active">Active</a></b>: Boolean read <a  href="BrookLogger.TBrookLogger.html#GetActive">GetActive</a> write <a  href="BrookLogger.TBrookLogger.html#SetActive">SetActive</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookLogger.TBrookLogger.html#FileName">FileName</a></b>: TFileName read <a  href="BrookLogger.TBrookLogger.html#GetFileName">GetFileName</a> write <a  href="BrookLogger.TBrookLogger.html#SetFileName">SetFileName</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookLogger.TBrookLogger.html#Types">Types</a></b>: <a  href="BrookLogger.html#TBrookLogTypes">TBrookLogTypes</a> read FTypes write FTypes;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookLogger.TBrookLogger.html#Output">Output</a></b>: <a  href="BrookLogger.html#TBrookLogOutput">TBrookLogOutput</a> read <a  href="BrookLogger.TBrookLogger.html#GetOutput">GetOutput</a> write <a  href="BrookLogger.TBrookLogger.html#SetOutput">SetOutput</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookLogger.TBrookLogger.html#Prepared">Prepared</a></b>: Boolean read FPrepared;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookLogger.TBrookLogger.html#AfterLog">AfterLog</a></b>: <a  href="BrookLogger.html#TBrookLogEvent">TBrookLogEvent</a> read FAfterLog write FAfterLog;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a  href="BrookLogger.TBrookLogger.html#BeforeLog">BeforeLog</a></b>: <a  href="BrookLogger.html#TBrookLogEvent">TBrookLogEvent</a> read FBeforeLog write FBeforeLog;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetActive"></span><code>function <b>GetActive</b>: Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetActive"></span><code>procedure <b>SetActive</b>(const AValue: Boolean); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetFileName"></span><code>function <b>GetFileName</b>: TFileName; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetFileName"></span><code>procedure <b>SetFileName</b>(const AValue: TFileName); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="SetOutput"></span><code>procedure <b>SetOutput</b>(const AValue: <a  href="BrookLogger.html#TBrookLogOutput">TBrookLogOutput</a>); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><span id="GetOutput"></span><code>function <b>GetOutput</b>: <a  href="BrookLogger.html#TBrookLogOutput">TBrookLogOutput</a>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Create"></span><code>constructor <b>Create</b>(AOwner: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="GetServiceClass"></span><code>class function <b>GetServiceClass</b>: <a  href="BrookLogger.html#TBrookLoggerClass">TBrookLoggerClass</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return the service class provided by this class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="RegisterService"></span><code>class procedure <b>RegisterService</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Registers the service provided by this class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="UnregisterService"></span><code>class procedure <b>UnregisterService</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Unregisters the service provided by this class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Service"></span><code>class function <b>Service</b>: <a  href="BrookLogger.TBrookLogger.html">TBrookLogger</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return an instance of this class.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Prepare"></span><code>procedure <b>Prepare</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Prepare the logger broker.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Unprepare"></span><code>procedure <b>Unprepare</b>; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Unprepare the logger broker.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Log"></span><code>procedure <b>Log</b>(const AType: <a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a>; const S: string; const ACode: Word; const E: Exception = nil); virtual; abstract;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a log.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="DoLog"></span><code>procedure <b>DoLog</b>(const AType: <a  href="BrookLogger.html#TBrookLogType">TBrookLogType</a>; const S: string; const ACode: Word; const E: Exception = nil); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a log triggering the <code>AfterLog</code> and (BeforeLog) events.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Custom"></span><code>procedure <b>Custom</b>(const S: string; const ACode: Word); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a custom log.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Info"></span><code>procedure <b>Info</b>(const S: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes an information log.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Warn"></span><code>procedure <b>Warn</b>(const S: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a warning log.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Debug"></span><code>procedure <b>Debug</b>(const S: string); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes a debug log.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Error"></span><code>procedure <b>Error</b>(const S: string; E: Exception = nil); virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Writes an error log.</p>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Active"></span><code>property <b>Active</b>: Boolean read <a  href="BrookLogger.TBrookLogger.html#GetActive">GetActive</a> write <a  href="BrookLogger.TBrookLogger.html#SetActive">SetActive</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Enables or disables the logger.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="FileName"></span><code>property <b>FileName</b>: TFileName read <a  href="BrookLogger.TBrookLogger.html#GetFileName">GetFileName</a> write <a  href="BrookLogger.TBrookLogger.html#SetFileName">SetFileName</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Defines the name of the log file.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Types"></span><code>property <b>Types</b>: <a  href="BrookLogger.html#TBrookLogTypes">TBrookLogTypes</a> read FTypes write FTypes;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The logger output types.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Output"></span><code>property <b>Output</b>: <a  href="BrookLogger.html#TBrookLogOutput">TBrookLogOutput</a> read <a  href="BrookLogger.TBrookLogger.html#GetOutput">GetOutput</a> write <a  href="BrookLogger.TBrookLogger.html#SetOutput">SetOutput</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+The logger output mode.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="Prepared"></span><code>property <b>Prepared</b>: Boolean read FPrepared;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Return <code>True</code> if broker is prepared.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="AfterLog"></span><code>property <b>AfterLog</b>: <a  href="BrookLogger.html#TBrookLogEvent">TBrookLogEvent</a> read FAfterLog write FAfterLog;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered after the logger writes a log.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a  href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><span id="BeforeLog"></span><code>property <b>BeforeLog</b>: <a  href="BrookLogger.html#TBrookLogEvent">TBrookLogEvent</a> read FBeforeLog write FBeforeLog;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Is triggered before the logger writes a log.</p>
+</td></tr>
+</table>
+<hr><span class="appinfo"><em>Generated by <a  href="https://github.com/pasdoc/pasdoc/wiki">PasDoc 0.15.0</a>. </em>
+</span>
+</td></tr></table></body></html>
